@@ -12,4 +12,4 @@ Copy site.css from content folder.
 
 Build and execute project. 
 
-Note - I did not packages folder in the code due to size issue. I didnt' use any additional nuget package for thsi project.
+Note - I didnt' use any additional nuget package for thsi project.
