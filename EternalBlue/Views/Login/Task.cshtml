@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Task";
+}
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Finally you have done it!!! - Page 3 </h4>
+        <p>Now, donwload task file to complete the process</p>
+        <hr />
+        
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                @*@Html.ActionLink("Click here to download", "DownloadFile", new { htmlAttributes = new { @class = "btn btn-default" } })*@
+                <input type="button" class="btn btn-info" value="Download" onclick="location.href='@Url.Action("DownloadTask", "Login")'" />
+            </div>
+        </div>
+    </div>
+}
+
+@*<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>*@
